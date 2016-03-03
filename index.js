@@ -16,9 +16,7 @@ Memory.prototype.authenticate = function (user, password, done) {
     var self = this;
 
     self.client.get(user, function (err, real_password) {
-      if (err) {
-        return done(err, false);
-      }
+      if (err) {return done(err, false);}
 
       if (!real_password || password !== real_password) {
         return done(true, false);
@@ -33,7 +31,9 @@ Memory.prototype.authenticate = function (user, password, done) {
 
 Memory.prototype.adduser = function (user, password, done) {
     var self = this;
-    self.client.set(user, password, redis.print);
+    self.client.set(user, password, function(err, res) {
+      if (err) {return done(err);}
+      done(null, user);
+    });
 
-    done(null, user);
 };

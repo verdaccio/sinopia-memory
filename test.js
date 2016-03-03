@@ -5,7 +5,6 @@ describe("RedisAuth", function () {
   var Auth = require('./index');
   var auth = Auth({}, {});
 
-
   describe("#adduser", function () {
     it("adds users", function (done) {
       auth.adduser('test', 'secret', function (err, user) {
@@ -62,3 +61,4 @@ describe("RedisAuth", function () {
     });
   });
 });
+
