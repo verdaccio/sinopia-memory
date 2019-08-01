@@ -1,3 +1,9 @@
+## Deprecated repository
+
+**This repository has been moved to a monorepo you can find in [verdaccio/monorepo](https://github.com/verdaccio/monorepo). This package is located in [`plugins/auth-memory` folder](https://github.com/verdaccio/monorepo/tree/master/plugins/auth-memory)**
+
+---
+
 # verdaccio-auth-memory
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fverdaccio%2Fverdaccio-auth-memory.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fverdaccio%2Fverdaccio-auth-memory?ref=badge_shield)
 [![CircleCI](https://circleci.com/gh/verdaccio/verdaccio-auth-memory.svg?style=svg)](https://circleci.com/gh/ayusharma/verdaccio-auth-memory)
